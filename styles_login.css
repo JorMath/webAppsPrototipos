@@ -120,3 +120,27 @@ html {
 .IniciarSesion button:hover {
     background-color: #916191;
 }
+
+/* Responsivo para móviles */
+@media (max-width: 600px) {
+    .cajaLogin {
+        width: 90%;
+        height: auto;
+    }
+
+    .bannerLogin {
+        height: auto;
+    }
+
+    .bannerLogin p {
+        font-size: medium;
+    }
+
+    .credenciales input {
+        font-size: 0.8rem;
+    }
+
+    .IniciarSesion button {
+        width: 80%;
+    }
+}
