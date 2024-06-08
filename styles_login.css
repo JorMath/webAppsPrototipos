@@ -1,18 +1,122 @@
 :root {
     --primary-color: #212437;
+    --banner-login-color: #251434;
 }
-*{
+
+* {
     box-sizing: border-box;
-    border: 1px solid red;
 }
-body{
-    
-    color:aliceblue;
+
+body {
+    height: 100%;
+    color: #f0f8ff;
     background-color: var(--primary-color);
     display: flex;
-    align-content: center;
-    justify-content: center; 
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
 }
-.cajaLogin{
 
+html {
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+}
+.imagen{
+    width: 100%;
+    height: 100%;
+    opacity: 10%;
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+}
+.cajaLogin {
+    display: block;
+    border: var(--banner-login-color) 1px solid;
+    border-radius: 10px;
+    height: 20rem;
+    width: 30rem;
+    position: absolute;
+}
+
+.bannerLogin {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--banner-login-color);
+    height: 4rem;
+    border-bottom: var(--banner-login-color) 1px solid;
+    
+}
+
+.bannerLogin p {
+    padding: 10px;
+    margin: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.credenciales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 6rem;
+}
+
+.credenciales label {
+    display: block;
+    align-self: flex-start;
+    margin-left: 5%;
+    padding-bottom: 2%;
+    margin-top: 2%;
+}
+
+.credenciales input {
+    display: flex;
+    border-radius: 5px;
+    width: 90%;
+    margin-bottom: 2%;
+    padding: 4px; /* Espaciado interno para hacer más grande el input */
+    font-size: 0.9rem; 
+    background-color: var(--banner-login-color);
+    color: #f0f8ff;
+    border: 0;
+    padding: 2%
+}
+
+.credenciales input::placeholder {
+    justify-content: center;
+    align-items: center; 
+}
+
+/* Para centrar el placeholder en navegadores compatibles */
+
+.IniciarSesion {
+    display: flex;
+    justify-content: center;
+    background-color: var(--banner-login-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+    border-top: var(--banner-login-color) 1px solid;
+    height: 3.90rem;
+}
+
+.IniciarSesion button {
+    border-radius: 5px;
+    width: 60%;
+    height: 75%;
+    margin: 0.4rem;
+    padding: 0.3rem;
+    color: #f0f8ff;
+    transition: background-color 0.5s ease;
+    border: 2px #583558 solid;
+    background-color: var(--banner-login-color);
+}
+
+.IniciarSesion button:hover {
+    background-color: #916191;
 }
