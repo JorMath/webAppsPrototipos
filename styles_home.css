@@ -1,0 +1,237 @@
+:root {
+    --primary-color: #212437;
+    --banner-login-color: #251434;
+    --naranja:  #ee7f1e;
+    --naranja_hover: #de672d;
+}
+*{
+    box-sizing: border-box;
+    color: azure;
+    font-family: Helvetica, sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+.fondo{
+    position: absolute;
+    opacity: 0.5;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.fondo img{
+    height: 100%;
+    width: 100%;
+}
+
+*:not(.fondo){
+
+    z-index: 2;
+}
+
+body{
+    margin: 0px;
+    background: linear-gradient(to bottom, #1c0332, #8800ff);
+}
+
+.logo{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+header nav{
+    padding: 1rem;
+    height:80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img{
+    width: 35px;
+}
+
+.barraDeBusqueda{
+    display: flex;
+}
+
+.barraDeBusqueda input{
+    width: 500px;
+    padding: 1rem;
+    border-radius: 10px 0 0 10px;
+    border: 0px;
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #f5f5f5;
+    color: #434242;
+    border: 0;
+}
+
+
+.barraDeBusqueda input:focus{
+    border: 0;
+    outline-style: none;
+}
+
+.opciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opciones div{
+    width: 35px;
+}
+
+.botonBuscar{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--naranja);
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.botonBuscar div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 35px;
+    border-radius: 0 10px 10px 0;
+}
+
+.botonBuscar div:hover{
+    background-color: var(--naranja_hover);
+    transition: ease-in;
+    transition-duration: 0.2s;
+}
+
+.botonBuscar img{
+    width: 15px;
+    height: 10px;
+}
+
+.botonBuscar span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.botonBuscar span:hover{
+    background-color: #de672d;
+    transition: ease-in;
+    transition-duration: 0.2s;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 3rem;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 2rem 5rem;
+}
+
+.cartaVideojuego{
+    border-radius: 10px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.cartaVideojuego img:hover{
+    opacity: 0.80;
+    transition-duration: 0.3s;
+    background-color: #f5f5f5;
+}
+
+.precio{
+    padding: 0.5rem;
+    background-color: var(--naranja);
+    width: fit-content;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cartaVideojuego img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+footer img{
+    width: 40px;
+}
+
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 97px;
+    text-align: center;
+    padding: 5px;
+    padding-left: 70px;
+    padding-right: 2rem;
+    background-color: #1c0332;
+}
+
+footer ul {
+    font-family: Menu;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer ul li {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+footer div{
+    display: flex;
+    column-gap: 2rem;
+    margin-left: 10rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer div a{
+    display: flex;
+    text-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    height: 100%;
+}
+
+
+a, a:visited, a:active, a:hover, a:focus {
+    text-decoration: none;
+    color: inherit;
+}
