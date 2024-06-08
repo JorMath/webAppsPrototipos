@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #212437;
+}
+*{
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+body{
+    
+    color:aliceblue;
+    background-color: var(--primary-color);
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+}
+.cajaLogin{
+
+}
