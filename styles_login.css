@@ -105,7 +105,7 @@ html {
     height: 3.90rem;
 }
 
-.IniciarSesion button {
+.IniciarSesion a {
     border-radius: 5px;
     width: 60%;
     height: 75%;
@@ -115,9 +115,13 @@ html {
     transition: background-color 0.5s ease;
     border: 2px #583558 solid;
     background-color: var(--banner-login-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.IniciarSesion button:hover {
+.IniciarSesion a:hover {
     background-color: #916191;
 }
 
@@ -140,7 +144,7 @@ html {
         font-size: 0.8rem;
     }
 
-    .IniciarSesion button {
+    .IniciarSesion a {
         width: 80%;
     }
 }
