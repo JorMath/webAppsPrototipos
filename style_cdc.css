@@ -8,6 +8,7 @@
     box-sizing: border-box;
     color: azure;
     font-family: Helvetica, sans-serif;
+    border: 1px solid red;
 }
 
 body{
@@ -20,6 +21,7 @@ body{
     z-index: 1;
     height: 100%;
     width: 100%;
+    padding: 200px;
 }
 
 .fondo img{
@@ -35,4 +37,50 @@ body{
 body{
     margin: 0px;
     background: linear-gradient(to bottom, #1c0332, #8800ff);
+}
+
+.titulo{
+    text-align: center;
+}
+
+.contenido-del-cdc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.videojuegos{
+    display: grid;
+    grid-gap: 3rem;
+    grid-auto-rows: minmax(100px, 250px);
+    grid-template-columns: 1fr;
+    width: 60%;
+    
+}
+
+.img{
+    border-radius: 30px;
+}
+
+.img img{
+    border-radius: 10px;
+    height: 100%;
+    z-index: 1;
+}
+
+.tarjeta-videojuego{
+    display: flex;
+    justify-content: space-between;
+    background-color: #626163;
+    border-radius: 20px;
+    
+}
+
+.detalles{
+    flex-grow: 1;
+    padding: 25px;
+}
+
+.eliminar-del-cdc{
+    text-align: right;
+    text-decoration: underline;
 }
