@@ -131,7 +131,6 @@ body{
     z-index: 1;
     height: 100%;
     width: 100%;
-    padding: 200px;
 }
 
 .fondo img{
@@ -147,6 +146,11 @@ body{
 body{
     margin: 0px;
     background: linear-gradient(to bottom, #1c0332, #8800ff);
+
+}
+
+main{
+    padding: 150px;
 }
 
 .titulo{
@@ -193,6 +197,9 @@ body{
 .eliminar-del-cdc{
     text-align: right;
     text-decoration: underline;
+
+}
+
 footer img{
     width: 40px;
 }
