@@ -10,6 +10,12 @@
     font-family: Helvetica, sans-serif;
 }
 
+.logo{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
 header nav{
     padding: 1rem;
     height:80px;
@@ -19,6 +25,83 @@ header nav{
 
 header img{
     width: 35px;
+}
+
+.barraDeBusqueda{
+    display: flex;
+}
+
+.barraDeBusqueda input{
+    width: 500px;
+    padding: 1rem;
+    border-radius: 10px 0 0 10px;
+    border: 0px;
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #f5f5f5;
+    color: #434242;
+    border: 0;
+}
+
+
+.barraDeBusqueda input:focus{
+    border: 0;
+    outline-style: none;
+}
+
+.opciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opciones div{
+    width: 35px;
+}
+
+.botonBuscar{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--naranja);
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.botonBuscar div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 35px;
+    border-radius: 0 10px 10px 0;
+}
+
+.botonBuscar div:hover{
+    background-color: var(--naranja_hover);
+    transition: ease-in;
+    transition-duration: 0.2s;
+}
+
+.botonBuscar img{
+    width: 15px;
+    height: 10px;
+}
+
+.botonBuscar span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.botonBuscar span:hover{
+    background-color: #de672d;
+    transition: ease-in;
+    transition-duration: 0.2s;
 }
 
 body{
