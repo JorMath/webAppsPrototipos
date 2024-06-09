@@ -1,20 +1,23 @@
 :root {
     --primary-color: #212437;
     --banner-login-color: #251434;
-    --naranja:  #ee7f1e;
+    --naranja: #ee7f1e;
     --naranja_hover: #de672d;
 }
-*{
+
+* {
     box-sizing: border-box;
     color: azure;
     font-family: Helvetica, sans-serif;
 }
 
-body{
+body {
     position: relative;
+    margin: 0px;
+    background: linear-gradient(to bottom, #1c0332, #8800ff);
 }
 
-.fondo{
+.fondo {
     position: absolute;
     opacity: 0.5;
     z-index: 1;
@@ -22,43 +25,42 @@ body{
     width: 100%;
 }
 
-.fondo img{
+.fondo img {
     height: 100%;
     width: 100%;
 }
 
-*:not(.fondo){
-
+*:not(.fondo) {
     z-index: 2;
 }
 
-body{
+body {
     margin: 0px;
     background: linear-gradient(to bottom, #1c0332, #8800ff);
 }
 
-.logo{
+.logo {
     width: 55px;
     height: 55px;
     border-radius: 50%;
 }
 
-header nav{
+header nav {
     padding: 1rem;
-    height:80px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
 }
 
-header img{
+header img {
     width: 35px;
 }
 
-.barraDeBusqueda{
+.barraDeBusqueda {
     display: flex;
 }
 
-.barraDeBusqueda input{
+.barraDeBusqueda input {
     width: 500px;
     padding: 1rem;
     border-radius: 10px 0 0 10px;
@@ -71,22 +73,22 @@ header img{
 }
 
 
-.barraDeBusqueda input:focus{
+.barraDeBusqueda input:focus {
     border: 0;
     outline-style: none;
 }
 
-.opciones{
+.opciones {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.opciones div{
+.opciones div {
     width: 35px;
 }
 
-.botonBuscar{
+.botonBuscar {
     width: 150px;
     display: flex;
     justify-content: center;
@@ -97,7 +99,7 @@ header img{
     font-weight: bold;
 }
 
-.botonBuscar div{
+.botonBuscar div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,18 +108,18 @@ header img{
     border-radius: 0 10px 10px 0;
 }
 
-.botonBuscar div:hover{
+.botonBuscar div:hover {
     background-color: var(--naranja_hover);
     transition: ease-in;
     transition-duration: 0.2s;
 }
 
-.botonBuscar img{
+.botonBuscar img {
     width: 15px;
     height: 10px;
 }
 
-.botonBuscar span{
+.botonBuscar span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,13 +127,13 @@ header img{
     width: 100%;
 }
 
-.botonBuscar span:hover{
+.botonBuscar span:hover {
     background-color: #de672d;
     transition: ease-in;
     transition-duration: 0.2s;
 }
 
-.menu{
+.menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 3rem;
@@ -139,7 +141,7 @@ header img{
     padding: 2rem 5rem;
 }
 
-.cartaVideojuego{
+.cartaVideojuego {
     position: relative;
     border-radius: 10px;
     height: max-content;
@@ -149,19 +151,20 @@ header img{
 }
 
 
-.cartaVideojuego img:hover{
+.cartaVideojuego img:hover {
     opacity: 0.80;
     transition-duration: 0.3s;
     background-color: #f5f5f5;
-    
+
 }
-.cartaVideojuego:hover .agregar{
+
+.cartaVideojuego:hover .agregar {
     transition: ease-in;
     transition-duration: 0.3s;
     opacity: 1;
 }
 
-.precio{
+.precio {
     padding: 0.5rem;
     background-color: var(--naranja);
     width: fit-content;
@@ -169,7 +172,7 @@ header img{
     font-weight: bold;
 }
 
-.agregar{
+.agregar {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -180,24 +183,24 @@ header img{
 
 
 
-.cartaVideojuego img{
+.cartaVideojuego img {
     border-radius: 10px 10px 0 0;
     width: 100%;
     z-index: 1;
 }
 
-.agregar img:hover{
+.agregar img:hover {
     transition-duration: 0.3s;
 
 }
 
 
-.agregar{
+.agregar {
     opacity: 0;
 }
 
 
-footer img{
+footer img {
     width: 40px;
 }
 
@@ -231,14 +234,14 @@ footer ul li {
     align-items: center;
 }
 
-footer ul li a{
+footer ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
 
-footer div{
+footer div {
     display: flex;
     column-gap: 2rem;
     margin-left: 10rem;
@@ -247,7 +250,7 @@ footer div{
 
 }
 
-footer div a{
+footer div a {
     display: flex;
     text-wrap: nowrap;
     justify-content: center;
@@ -258,16 +261,21 @@ footer div a{
 }
 
 
-a, a:visited, a:active, a:hover, a:focus {
+a,
+a:visited,
+a:active,
+a:hover,
+a:focus {
     text-decoration: none;
     color: inherit;
 }
 
-.agregar img{
+.agregar img {
     border-radius: 50%;
     border: 2px solid #f2f2f2;
     background-color: #f2f2f2;
 }
-.agregar{
+
+.agregar {
     right: 0;
 }
