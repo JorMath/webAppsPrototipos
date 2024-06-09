@@ -8,7 +8,6 @@
     box-sizing: border-box;
     color: azure;
     font-family: Helvetica, sans-serif;
-    border: 1px solid red;
 }
 
 .logo{
@@ -150,7 +149,7 @@ body{
 }
 
 main{
-    padding: 150px;
+    padding: 100px 250px;
 }
 
 .titulo{
@@ -184,7 +183,7 @@ main{
 .tarjeta-videojuego{
     display: flex;
     justify-content: space-between;
-    background-color: #626163;
+    background-color: #171d6ed2;
     border-radius: 20px;
     
 }
@@ -204,6 +203,35 @@ footer img{
     width: 40px;
 }
 
+.texto{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.resumen p {
+    margin: 0;
+    
+}
+
+.resumen{
+    background-color: #4b464e98;
+    padding: 1em;
+    border-radius: 25px
+}
+
+.finalizar-comprar {
+    display: block; 
+    width: 100%; 
+    text-align: center; 
+    padding: 1rem 0; 
+    background: #007bff; 
+    color: white; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    margin-top: 2rem; 
+    cursor: pointer; 
+}
 
 footer {
     display: flex;
