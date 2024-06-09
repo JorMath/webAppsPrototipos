@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de pago</title>
+    <link rel="stylesheet" href="styles_Payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="Imagen">
+        <img src="images/thunderstorm-3625405_1920.jpg" alt="Imagen de fondo">
+    </div>
+    <div class="cajaPago">
+        <div class="infoPago">
+            <h3>Procesar pago</h3>
+            <i class="bi bi-credit-card"></i>
+        </div>
+        <p>Ingresa tu información de pago</p>
+        <div class="detallesPago">
+            <div class="detalleTarjeta">
+                <label>Nombre del titular</label>
+                <input type="text" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="detalleTarjeta">
+                <label>Número de tarjeta</label>
+                <input type="number" placeholder="Ingresa el número de tu tarjeta">
+            </div>
+            <div class="detallesNumeros">
+                <div class="detallesVencimiento">
+                    <div>
+                        <label for="vencimiento">Vencimiento (MM/YY)</label>
+                        <input type="text" id="vencimiento" name="vencimiento" placeholder="MM/YY">
+                    </div>
+                    <div>
+                        <label for="cvc">CVC</label>
+                        <input type="number" id="cvc" name="cvc" placeholder="CVC">
+                    </div>
+                </div>
+                <div class="Pago">
+                    <a href="home.html">Pagar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="formatearFecha.js"></script>
+</body>
+</html>
