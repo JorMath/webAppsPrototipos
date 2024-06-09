@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #212437;
+    --banner-login-color: #251434;
+    --naranja:  #ee7f1e;
+    --naranja_hover: #de672d;
+}
+*{
+    box-sizing: border-box;
+    color: azure;
+    font-family: Helvetica, sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+.fondo{
+    position: absolute;
+    opacity: 0.5;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.fondo img{
+    height: 100%;
+    width: 100%;
+}
+
+*:not(.fondo){
+
+    z-index: 2;
+}
+
+body{
+    margin: 0px;
+    background: linear-gradient(to bottom, #1c0332, #8800ff);
+}
