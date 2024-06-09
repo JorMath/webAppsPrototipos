@@ -140,6 +140,7 @@ header img{
 }
 
 .cartaVideojuego{
+    position: relative;
     border-radius: 10px;
     height: max-content;
     display: flex;
@@ -147,10 +148,17 @@ header img{
     row-gap: 5px;
 }
 
+
 .cartaVideojuego img:hover{
     opacity: 0.80;
     transition-duration: 0.3s;
     background-color: #f5f5f5;
+    
+}
+.cartaVideojuego:hover .agregar{
+    transition: ease-in;
+    transition-duration: 0.3s;
+    opacity: 1;
 }
 
 .precio{
@@ -161,14 +169,33 @@ header img{
     font-weight: bold;
 }
 
+.agregar{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+
+
+
 .cartaVideojuego img{
     border-radius: 10px 10px 0 0;
     width: 100%;
+    z-index: 1;
 }
 
-img{
-    width: 100%;
+.agregar img:hover{
+    transition-duration: 0.3s;
+
 }
+
+
+.agregar{
+    opacity: 0;
+}
+
 
 footer img{
     width: 40px;
@@ -234,4 +261,13 @@ footer div a{
 a, a:visited, a:active, a:hover, a:focus {
     text-decoration: none;
     color: inherit;
+}
+
+.agregar img{
+    border-radius: 50%;
+    border: 2px solid #f2f2f2;
+    background-color: #f2f2f2;
+}
+.agregar{
+    right: 0;
 }
